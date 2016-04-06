@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import "normalize.less";
+@import "skeleton.less";
+@import "owl.carousel.less";
 @import "variables.less";
 @import "utilities.less";
 @import "common.less";
@@ -8,7 +11,6 @@
     font-weight: 400;
     src: url('fonts/Oswald-Regular/Oswald-Regular.eot');
     src: url('fonts/Oswald-Regular/Oswald-Regular.eot') format('embedded-opentype'),
-         url('fonts/Oswald-Regular/Oswald-Regular.woff2') format('woff2'),
          url('fonts/Oswald-Regular/Oswald-Regular.woff') format('woff'),
          url('fonts/Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
          url('fonts/Oswald-Regular/Oswald-Regular.svg#Oswald-Regular') format('svg');
@@ -19,7 +21,6 @@
     font-weight: 700;
     src: url('fonts/Roboto-Bold/Roboto-Bold.eot');
     src: url('fonts/Roboto-Bold/Roboto-Bold.eot') format('embedded-opentype'),
-         url('fonts/Roboto-Bold/Roboto-Bold.woff2') format('woff2'),
          url('fonts/Roboto-Bold/Roboto-Bold.woff') format('woff'),
          url('fonts/Roboto-Bold/Roboto-Bold.ttf') format('truetype'),
          url('fonts/Roboto-Bold/Roboto-Bold.svg#Roboto-Bold') format('svg');
@@ -30,7 +31,6 @@
     font-weight: 400;
     src: url('fonts/Roboto-Regular/Roboto-Regular.eot');
     src: url('fonts/Roboto-Regular/Roboto-Regular.eot') format('embedded-opentype'),
-         url('fonts/Roboto-Regular/Roboto-Regular.woff2') format('woff2'),
          url('fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'),
          url('fonts/Roboto-Regular/Roboto-Regular.ttf') format('truetype'),
          url('fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular') format('svg');
@@ -117,6 +117,14 @@ body {
 		font-size: 25px;
     	line-height: 1;
     	margin: 0;
+
+    	a {
+    		font-family: @oswald-font;
+			color: @primary-color;
+			font-size: 25px;
+	    	line-height: 1;
+	    	text-decoration: none;
+    	}
 	}
 
 	.add-item {
@@ -267,8 +275,12 @@ body {
 	}
 }
 
+.button-wrapper {
+	margin-top: 15px;
+}
+
 .getting-started-form {
-	margin-top: 80px;
+	margin-top: 150px;
 }
 
 .search-form-container {
@@ -302,7 +314,7 @@ body {
 }
 
 .tile-container {
-	padding: 0 20px;
+	padding: 20px 20px 0 20px;
 }
 
 .brand-list {
