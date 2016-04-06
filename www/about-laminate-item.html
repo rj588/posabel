@@ -56,13 +56,21 @@
 			<h2>Opulenza</h2>
 		</div>
 		<div class="m-25">
+
+		<!-- <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a> -->
+<div style="display:none">
+	<div id="mylightbox">
+		<img src="img/laminate.jpg" style="width:1000px; ">
+	</div>
+</div>
+
 			<div class="row">
 				<div class="six columns">
 					<div class="lam-try">
 						<a href="">
 							<img src="img/laminate.jpg">
 						</a>
-						<a href="add-laminate.html" class="btn">Add</a>
+						<a href="#" data-featherlight="#mylightbox" class="btn">Add</a>
 
 					</div>
 				</div>
@@ -168,6 +176,7 @@
 </footer>
 
 <script src="js/vendor/jquery-1.11.1.js"></script>
+<script src="js/vendor/featherlight.min.js"></script>
 <script type="text/javascript">
 	less = {
 	            env: "development", // or "production"
